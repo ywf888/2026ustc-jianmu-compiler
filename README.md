@@ -9,3 +9,4 @@
 
 eval_lab2.sh: 
     没有参数，直接运行即可，结果会生成在 eval_result 下
+# Hello World
