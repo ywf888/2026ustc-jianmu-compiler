@@ -27,15 +27,15 @@ int main(int argc, char** argv){
     for (const auto& h : vec) {
         std::cout << h->print();
     }
-    // auto student1 = new Student();   //TODO: Error 1 : why?
+    //auto student1 = new Student();   //TODO: Error 1 : why?
     auto student1 = static_cast<Student*>(vec.back());
-    // check check1 = check(vec.back());   //TODO: Error 2 : why?
+    //check check1 = check(vec.back());   //TODO: Error 2 : why?
     check check1 = check(student1);
 
-    // std::list<int> list;
-    // list.push_back(1);
-    // for(auto i: list){
-    //     list.remove(i);              //TODO: Error 3 : why?
-    // }
+    std::list<int> list;
+    list.push_back(1);
+    for(auto i: list){
+         list.remove(i);              //TODO: Error 3 : why?
+    }
     return 0;
 }
